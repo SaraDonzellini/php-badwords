@@ -15,8 +15,10 @@
     </section><br>
     <section>
       <form action="./request.php" method="POST">
-        <input type="text" name="paragrafo" id="paragrafo" placeholder="inserisci un paragrafo">
-        <input type="text" name="censura" id="censura" placeholder="inserisci la parola da censurare">
+        <label for="paragrafo">Inserisci un testo</label>
+        <input type="text" name="paragrafo" id="paragrafo">
+        <label for="censura">Inserisci la parola da censurare</label>
+        <input type="text" name="censura" id="censura">
         <button type="submit">Invia</button>
       </form>
       </section>
