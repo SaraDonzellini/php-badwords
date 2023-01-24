@@ -1,27 +1,27 @@
 <section>
   <p>
-    <?php 
-      echo $_POST['paragrafo'];
+    <?php
+    echo $_POST['paragrafo'];
     ?>
   </p>
   <h5>
-    <?php 
-      echo strlen($_POST['paragrafo']);
+    <?php
+    echo strlen($_POST['paragrafo']);
     ?>
   </h5>
 </section>
 
 <section>
   <p>
-    <?php 
+    <?php
 
-      $replacedString = str_ireplace('suscipit', '***', $_POST['paragrafo']);
-      echo $replacedString;
+    $replacedString = str_ireplace($_POST['censura'], '***', $_POST['paragrafo']);
+    echo $replacedString;
     ?>
   </p>
   <h5>
-    <?php 
-      echo strlen($replacedString);
+    <?php
+    echo strlen($replacedString);
     ?>
   </h5>
 </section>
